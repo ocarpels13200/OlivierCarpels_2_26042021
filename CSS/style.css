@@ -1,4 +1,8 @@
+body{
+    background-color: #f2f2f2;
+}
 header{
+
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -9,4 +13,11 @@ header ul{
 header li{
     list-style: none;
     margin-right: 30px;
+    color: #0065FC;
+}
+header ul a{
+    text-decoration: none;
+}
+.menu:hover{
+    text-decoration: overline;
 }
