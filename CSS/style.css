@@ -1,5 +1,6 @@
 body{
     background-color: #f2f2f2;
+    font-size: 1rem;
 }
 header{
 
@@ -20,4 +21,30 @@ header ul a{
 }
 .menu:hover{
     text-decoration: overline;
+}
+#filtres{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+#eco{
+    display: flex;
+}
+#famille{
+    display: flex;
+}
+#romantique{
+    display: flex;
+}
+#animaux{
+    display: flex;
+}
+#hebergement{
+    background-color: rgb(177, 175, 175);
+    width: 60%;
+}
+#logement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
