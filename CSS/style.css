@@ -1,50 +1,82 @@
+/* Fonts, taille de texte générique et fond de page */
 body{
     background-color: #f2f2f2;
     font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
 }
+/*En-tête*/
 header{
-
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 60px 0 60px;
+}
+#logoTitre h1{
+    font-size: 1.3em;
+}
+#logoTitre h2{
+    font-size: 1em;
+    font-weight: normal;
 }
 header ul{
     display: flex;
 }
-header li{
+.menu{
     list-style: none;
     margin-right: 30px;
-    color: #0065FC;
 }
-header ul a{
+.menu a{
     text-decoration: none;
+    color: #0065FC;
+    font-size: 0.9em;
 }
 .menu:hover{
     text-decoration: overline;
 }
+/*Barre de recherche*/
+#recherche{
+    margin: 0 60px 0 60px;
+}
+#recherche h2{
+    font-size: 1.2em;
+}
+#recherche h3{
+    font-size: 0.8em;
+}
 #filtres{
     display: flex;
-    width: 60%;
+    width: 66%;
     justify-content: space-between;
 }
-#eco{
+.choix{
     display: flex;
 }
-#famille{
-    display: flex;
-}
-#romantique{
-    display: flex;
-}
-#animaux{
-    display: flex;
-}
-#hebergement{
-    background-color: rgb(177, 175, 175);
-    width: 60%;
-}
+/*Logements section + aside*/
 #logement{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 60px 0 60px;
+}
+/*Logements de la ville*/
+#logementVille{
+    border: 2px solid lime;
+    width: 65%;
+}
+#logementVille h2{
+    font-size: 1em;
+}
+/*Logements les plus populaires*/
+#populaire{
+    border: 2px solid lime;
+    width: 33%;
+}
+#populaire h2{
+    font-size: 1em;
+}
+/*Liste des activités*/
+#activites{
+    border: 2px solid lime;
+    margin: 40px 60px 0 60px;
+}
+#activites h2{
+    font-size: 1em;
 }
