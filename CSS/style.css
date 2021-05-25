@@ -34,7 +34,7 @@ header ul{
 }
 /*Barre de recherche*/
 #recherche{
-    margin: 0 60px 0 60px;
+    margin: 40px 60px 0 60px;
 }
 #recherche h2{
     font-size: 1.2em;
@@ -54,29 +54,43 @@ header ul{
 #logement{
     display: flex;
     justify-content: space-around;
-    margin: 0 60px 0 60px;
+    margin: 40px 60px 0 60px;
 }
 /*Logements de la ville*/
 #logementVille{
-    border: 2px solid lime;
-    width: 65%;
+    background-color: #d3cece;
+    width: 66%;
+    margin-right: 50px;
 }
 #logementVille h2{
     font-size: 1em;
 }
 /*Logements les plus populaires*/
 #populaire{
-    border: 2px solid lime;
-    width: 33%;
+    background-color: #d3cece;
+    width: 34%;
 }
 #populaire h2{
     font-size: 1em;
 }
 /*Liste des activités*/
 #activites{
-    border: 2px solid lime;
+    background-color: #d3cece;
     margin: 40px 60px 0 60px;
 }
 #activites h2{
     font-size: 1em;
+}
+/*Pied de page*/
+#piedPage{
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    margin: 40px 0 0 60px;
+}
+.menuPP h2{
+    font-size: 1em;
+}
+.menuPP P{
+    font-size: 0.8em;
 }
