@@ -4,18 +4,27 @@ body{
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
 }
+/*Mise en page balises génériques*/
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1em;
+}
+p{
+    font-size: 0.9em;
+}
+section{
+    margin: 40px 60px;
+}
 /*En-tête*/
 header{
     display:flex;
     justify-content: space-between;
     margin: 0 60px;
-}
-#logoTitre h1{
-    font-size: 1.3em;
-}
-#logoTitre h2{
-    font-size: 1em;
-    font-weight: normal;
 }
 header ul{
     display: flex;
@@ -33,12 +42,6 @@ header ul{
     text-decoration: overline;
 }
 /*Barre de recherche*/
-#recherche{
-    margin: 40px 60px 0 60px;
-}
-#recherche h2{
-    font-size: 1.2em;
-}
 #recherche h3{
     font-size: 0.8em;
 }
@@ -66,7 +69,6 @@ header ul{
 #logement{
     display: flex;
     justify-content: space-around;
-    margin: 40px 60px 0 60px;
 }
 /*Logements de la ville*/
 #logementVille{
@@ -75,7 +77,6 @@ header ul{
     margin-right: 50px;
 }
 #logementVille h2{
-    font-size: 1em;
     margin-left: 20px;
 }
 #logementVille img{
@@ -87,12 +88,9 @@ header ul{
     padding: 10px;
 }
 #logementVille h3{
-    font-size: 0.9em;
-    font-weight: bolder;
     margin-left: 10px;
 }
 #logementVille p{
-    font-size: 0.8em;
     margin-left: 10px;
 }
 #logementVille i{
@@ -119,9 +117,6 @@ header ul{
 #populaire{
     background-color: #f2f2f2;
     width: 34%;
-}
-#populaire h2{
-    font-size: 1em;
 }
 /*Liste des activités*/
 #activites{
