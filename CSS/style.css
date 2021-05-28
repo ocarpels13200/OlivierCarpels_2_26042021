@@ -24,7 +24,7 @@ section{
 header{
     display:flex;
     justify-content: space-between;
-    margin: 0 60px;
+    margin: 20px 60px;
 }
 header ul{
     display: flex;
@@ -39,7 +39,8 @@ header ul{
     font-size: 0.9em;
 }
 .menu a:hover{
-    text-decoration: overline;
+    border-top: solid 2px #0065FC;
+    padding-top: 20px;
 }
 /*Barre de recherche*/
 #recherche h3{
