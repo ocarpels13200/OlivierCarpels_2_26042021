@@ -14,7 +14,7 @@
         <link href="./fontawesome/css/all.css" rel="stylesheet">
     </head>
     <body>
-        <!--En-tête de la page, logo, titre et menu-->
+        <!--En-tête de la page, logo et menu-->
         <header>
             <a href="index.html"><img src="./Images/Reservia.svg" alt="Logo Reservia" /></a>
             <ul>
@@ -25,30 +25,31 @@
         </header>
         <main>
         <!--Fonction recherche du site avec filtres-->
-            <section id="recherche">
+            <section>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2>En plein centre ville ou en pleine nature</h2>
-                <form>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form id="recherche">
+                    <i class="fas fa-map-marker-alt"></i>
                     <input type="search" name="search" id="search" placeholder="Marseille, France" />
                     <button type="submit">Rechercher</button>
                 </form>
                 <div id="filtres">
-                    <h2>Filtres</h2>
+                    <p>Filtres</p>
                     <div class="choix">
                         <i class="fas fa-money-bill-wave-alt"></i>
-                        <h3>Économique</h3>
+                        <p>Économique</p>
                     </div>
                     <div class="choix">
                         <i class="fas fa-child"></i>
-                        <h3>Familiale</h3>
+                        <p>Familiale</p>
                     </div>
                     <div class="choix">
                         <i class="fas fa-heart"></i>
-                        <h3>Romantique</h3>
+                        <p>Romantique</p>
                     </div>
                     <div class="choix">
                         <i class="fas fa-dog"></i>
-                        <h3>Animaux autorisés</h3>
+                        <p>Animaux autorisés</p>
                     </div>
                 </div>
             </section>

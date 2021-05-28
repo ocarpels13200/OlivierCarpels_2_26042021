@@ -43,20 +43,39 @@ header ul{
     padding-top: 20px;
 }
 /*Barre de recherche*/
-#recherche h3{
-    font-size: 0.8em;
+#recherche i{
+    padding: 10px;
+    background-color: #d4d1d1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#recherche input{
+    height: 36px;
+    margin-left: -4px;
+}
+#recherche button{
+    height: 36px;
+    margin-left: -5px;
+    border-radius: 0 10px 10px 0;
+    background-color: #0065FC;
+    color: white;
 }
 #filtres{
+    margin-top: 40px;
     display: flex;
-    width: 66%;
+    width: 60%;
     justify-content: space-between;
 } 
+#filtres p{
+    font-size: 1em;
+    font-weight: bold;
+}
 .choix{
     display: flex;
     align-items: center;
 }
 .choix i{
-    padding: 5px;
+    padding: 10px;
     color: #0065FC;
     border-radius: 50px;
     background-color: #DEEBFF;
