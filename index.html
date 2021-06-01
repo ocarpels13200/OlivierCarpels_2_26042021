@@ -2,9 +2,10 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <title>Reservia - Trouvez votre hébergement</title>
     <meta name="description" content="Reservia, réservez votre logement en ligne">
     <!-- Google Fonts-->
@@ -12,63 +13,83 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
     </style>
     <!--Fontawesome-->
-    <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <link href="./fontawesome/css/all.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!--En-tête de la page, logo et menu-->
+
+<!-- ----------------------------------------------En-tête de la page, logo et menu---------------------------------------------------------------- -->
+
     <header>
-        <a href="index.html"><img src="./Images/Reservia.svg" alt="Logo Reservia" /></a>
-        <ul>
-            <li class="menu"><a href="#logementVille">Hébergements</a></li>
-            <li class="menu"><a href="#activites">Activités</a></li>
-            <li class="menu"><a href="#">S'inscrire</a></li>
-        </ul>
+        <a href="index.html"><img src="./Images/Reservia.svg" alt="Logo Reservia" /></a><!--Logo-->
+        <div class="menu">
+            <ul>
+                <li><a href="#logementVille">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+            </ul><!--Menu-->
+            <p><a class="inscrire" href="#">S'inscrire</a></p>
+        </div>
     </header>
+
     <main>
-        <!--Fonction recherche du site avec filtres-->
-        <section>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+
+<!-- -----------------------------------------Fonction recherche sur le site avec systèmes de filtres---------------------------------------------- -->
+      
+        <section> 
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1><!--Titre de la section-->
             <p>En plein centre ville ou en pleine nature</p>
+            
+            <!--Formulaire de recherche-->
             <form id="recherche">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="search" name="search" id="search" placeholder="Marseille, France" />
                 <button type="submit">Rechercher</button>
             </form>
+
+            <!--Gestion des filtres-->
             <div id="filtres">
-                <p>Filtres</p>
+                <p class="paragraphe">Filtres</p>
                 <div class="choix">
                     <i class="fas fa-money-bill-wave-alt"></i>
-                    <p>Économique</p>
+                    <p class="paragrapheChoix">Économique</p>
                 </div>
                 <div class="choix">
                     <i class="fas fa-child"></i>
-                    <p>Familiale</p>
+                    <p class="paragrapheChoix">Familiale</p>
                 </div>
                 <div class="choix">
                     <i class="fas fa-heart"></i>
-                    <p>Romantique</p>
+                    <p class="paragrapheChoix">Romantique</p>
                 </div>
                 <div class="choix">
                     <i class="fas fa-dog"></i>
-                    <p>Animaux autorisés</p>
+                    <p class="paragrapheChoix">Animaux autorisés</p>
                 </div>
             </div>
         </section>
-        <p>
+
+<!-- -------------------------------------------------Hébergements disponibles---------------------------------------------- -->
+
+        <p class="paragraphe">
             <i class="fas fa-info"></i> Plus de 500 logement sont disponibles dans cette ville
         </p>
+
         <div id=hebergement>
+
             <!--Liste des hébergement disponible-->
             <section id="logementVille">
-                <h2>Hébergements à Marseille</h2>
-                <div id="hotel">
-                    <a href="#">
+                <h2>Hébergements à Marseille</h2><!--Titre de la section-->
+
+                <div id="hotel"><!--Bloc des hotels -> grid-->
+
+<!-- ----------------------------------------------------- Hôtel 1 ----------------------------------------------------- -->
+
+                    <a href="#"><!--Application d'un lien hypertexte-->
                         <div class="logementHotel">
-                            <img src="./Images/hebergement/marseille/aubergeCannebiere.jpg" alt="Auberge la Cannebière">
-                            <h3>Auberge la Cannebière</h3>
+                            <img src="./Images/hebergement/marseille/aubergeCannebiere.jpg" alt="Auberge la Cannebière"><!--Photo de l'hôtel-->
+                            <h3>Auberge la Cannebière</h3><!--Nom de l'hôtel-->
                             <p>Nuit à partir de 25€</p>
-                            <div class="note">
+                            <div class="note"><!--Note de l'hôtel-->
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -77,6 +98,11 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 1 ----------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Hôtel 2 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementHotel">
                             <img src="./Images/hebergement/marseille/hotelPort.jpg" alt="Hôtel du port">
@@ -91,6 +117,11 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 2 ----------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Hôtel 3 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementHotel">
                             <img src="./Images/hebergement/marseille/hotelMouettes.jpg" alt="Hôtel les mouettes">
@@ -105,6 +136,11 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 3 ----------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Hôtel 4 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementHotel">
                             <img src="./Images/hebergement/marseille/hotelMer.jpg" alt="Hôtel de la mer">
@@ -119,6 +155,11 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 4 ----------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Hôtel 5 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementHotel">
                             <img src="./Images/hebergement/marseille/aubergePanier.jpg" alt="Auberge le Panier">
@@ -133,6 +174,11 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 5 ----------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Hôtel 6 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementHotel">
                             <img src="./Images/hebergement/marseille/hotelAmina.jpg" alt="Hôtel chez Amina">
@@ -147,12 +193,24 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 6 ----------------------------------------------------- -->
+
                 </div>
+                <p id="afficherPlus">Afficher plus</p>
             </section>
-            <!--Hébergements les plus populaires-->
+
+<!-- ----------------------------------------------------- Hebergement populaire ----------------------------------------------------- -->
+           
             <aside id="populaire">
-                <h2>Les plus populaires</h2>
+                <div id="titre">
+                    <h2>Les plus populaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
                 <div id="hotelPop">
+
+<!-- ----------------------------------------------------- Hôtel 1 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementPop">
                             <img src="./Images/hebergement/marseille/soleilMatin.jpg" alt="Hôtel le soleil du matin">
@@ -169,6 +227,11 @@
                             </div>                        
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 1 ----------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Hôtel 2 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementPop">
                             <img src="./Images/hebergement/marseille/coeurEau.jpg" alt="Au coeur de l'eau">
@@ -185,12 +248,17 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 2 ----------------------------------------------------- -->
+
+<!-- ----------------------------------------------------- Hôtel 3 ----------------------------------------------------- -->
+
                     <a href="#">
                         <div class="logementPop">
-                            <img src="./Images/hebergement/marseille/hotelMouettes.jpg" alt="Hôtel les mouettes">
+                            <img src="./Images/hebergement/marseille/bleuBlanc.jpg" alt="Hôtel tout bleu et blanc">
                             <div>
-                                <h3>Hôtel les mouettes</h3>
-                                <p>Nuit à partir de 76€</p>
+                                <h3>Hôtel tout bleu et blanc</h3>
+                                <p>Nuit à partir de 68€</p>
                                 <div class="note">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -201,14 +269,62 @@
                             </div>
                         </div>
                     </a>
+
+<!-- ----------------------------------------------------- Fin Hôtel 3 ----------------------------------------------------- -->
+
                 </div>
             </aside>
         </div>
-        <!--Liste des activités-->
-        <section id="activites">
+
+<!-- ----------------------------------------------------- Liste des activités ----------------------------------------------------- -->
+        
+        <section>
             <h2>Activités à Marseille</h2>
+            <div id="activites">
+                <div class="grandeImg">
+                    <a href="#">
+                        <img src="./Images/activites/vieuxPort.jpg" alt="Vieux port">
+                        <p class="texteActivites">Vieux port</p>                    
+                    </a>
+                </div>
+                <div class="petitFormat">
+                    <div class="petiteImg">
+                        <a href="#">
+                            <img src="./Images/activites/fortPomegues.jpg" alt="Fort Pomègues">
+                            <p class="texteActivites">Fort Pomègues</p>
+                        </a>
+                    </div>
+                    <div class="petiteImg">
+                        <a href="#">
+                            <img src="./Images/activites/frioul.jpg" alt="Îles du Fioul">
+                            <p class="texteActivites">Îles du Fioul</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="grandeImg">
+                    <a href="#">
+                        <img src="./Images/activites/calanques.jpg" alt="Parc National des Calanques">
+                        <p class="texteActivites">Parc National des Calanques</p>                    
+                    </a>
+                </div>
+                <div class="petitFormat">
+                    <div class="petiteImg">
+                        <a href="#">
+                            <img src="./Images/activites/notreDamedelaGarde.jpg" alt="Notre-Dame-de-la-Garde">
+                            <p class="texteActivites">Notre-Dame-de-la-Garde</p>
+                        </a>
+                    </div>
+                    <div class="petiteImg">
+                        <a href="#">
+                            <img src="./Images/activites/parcLongchamp.jpg" alt="Parc Longchamp">
+                            <p class="texteActivites">Parc Longchamp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <!--Pied de page-->
     <footer id="piedPage">
         <div class="menuPP">
             <h2>A propos</h2>
