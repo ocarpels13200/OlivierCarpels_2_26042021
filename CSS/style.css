@@ -6,12 +6,121 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/*Media queries*/
+
+@media screen and (min-width: 800px)
+{
+    /*En-tête*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 60px;
+    }
+
+    header a:hover {
+        border-top: solid 2px #0065FC;
+        padding-top: 20px;
+        color: #0065FC;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 60px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+
+    /*Barre de recherche*/
+    #recherche button {
+        height: 36px;
+        margin-left: -5px;
+        border-radius: 0 10px 10px 0;
+        background-color: #0065FC;
+        color: white;
+    }
+
+    #recherche a{
+        display: none;
+    }
+
+    /*Logements section + aside*/
+    #hebergement {
+        display: flex;
+    }
+
+    #hotel {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    /*Logements de la ville*/
+    #logementVille {
+        width: 1040px;
+    }
+    
+}
+
+@media screen and (max-width: 800px)
+{
+    /*En-tête*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 20px 60px;
+    }
+
+    header ul li a:hover {
+        border-bottom: solid 2px #0065FC;
+        padding-bottom: 20px;
+        color: #0065FC;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    /*Barre de recherche*/
+    #recherche button {
+        display: none;
+    }
+
+    #recherche a{
+        height: 36px;
+        margin-left: -5px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    #recherche a i{
+        border-radius: 10px;
+        background-color: #0065FC;
+        color: white;
+    }
+
+    #filtres{
+        width: 90%;
+    }
+
+    /*Logements section + aside*/
+    #hebergement {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
 
 /*Mise en page balises génériques*/
-
-h1 {
-    font-size: 1.5em;
-}
 
 h2 {
     font-size: 1.2em;
@@ -43,38 +152,24 @@ aside {
 
 /*En-tête*/
 
-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 60px;
-}
-
 header ul {
     display: flex;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu li{
+header ul li{
     list-style: none;
     margin-right: 30px;
+}
+
+header ul li a{
     color: black;
 }
 
-.menu a {
-    font-size: 0.9em;
+header a {
+    font-size: 1em;
 }
 
-.menu a:hover {
-    border-top: solid 2px #0065FC;
-    padding-top: 20px;
-}
-
-.inscrire{
+.menu p a{
     color: #0065FC;
     font-weight: bold;
 }
@@ -90,15 +185,9 @@ header ul {
 
 #recherche input {
     height: 36px;
+    width: 180px;
     margin-left: -4px;
-}
-
-#recherche button {
-    height: 36px;
-    margin-left: -5px;
-    border-radius: 0 10px 10px 0;
-    background-color: #0065FC;
-    color: white;
+    border: none;
 }
 
 
@@ -107,8 +196,9 @@ header ul {
 #filtres {
     margin-top: 40px;
     width: 60%;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 2fr;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #filtres p {
@@ -120,20 +210,19 @@ header ul {
 .choix {
     display: flex;
     align-items: center;
-    margin: 0 20px;
-}
-
-.paragrapheChoix{
-    width: auto;
+    margin: 5px 20px;
     height: 35px;
-    padding: 0 20px;
-    margin-left: -8px;
     border: solid 1px grey;
-    border-left: none;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
+    border-radius: 25px;
 }
 
+.choix:hover{
+    background-color: #98b6cf;
+}
+
+.choix p{
+    padding: 0 20px;
+}
 
 .choix i {
     padding: 10px;
@@ -142,39 +231,26 @@ header ul {
     background-color: #DEEBFF;
 }
 
-.choix h3 {
-    border: 1px solid #d3cece;
-    border-radius: 10%;
-    padding: 5px 5px 5px 5px;
+.long p{
+    min-width: 130px;
 }
-
 
 /*Logements section + aside*/
 
 .paragraphe i{
     margin-left: 60px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
-#hebergement {
-    display: flex;
+.infoPosition{
+    position: absolute;
+    margin-left: 10px;
 }
-
 
 /*Logements de la ville*/
 
-#logementVille {
-    width: 60%;
-}
-
 #logementVille h2 {
     margin-left: 20px;
-}
-
-#hotel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
 }
 
 .logementHotel {
@@ -249,6 +325,7 @@ header ul {
     background-color: #DEEBFF;
     border-radius: 15%;
     width: 80%;
+    min-width: 300px;
     height: 180px;
     margin: 10px 0;
 }
@@ -290,6 +367,7 @@ header ul {
 .grandeImg{
     border: solid 1px grey;
     border-radius: 20px;
+    min-width: 300px;
     width: 300px;
     height: 450px;
 }
