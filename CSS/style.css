@@ -8,70 +8,13 @@ body {
 
 /*Media queries*/
 
-@media screen and (min-width: 800px)
+@media screen and (max-width: 799px)
 {
     /*En-tête*/
     header {
         display: flex;
         justify-content: space-between;
-        margin: 20px 60px;
-    }
-
-    header a:hover {
-        border-top: solid 2px #0065FC;
-        padding-top: 20px;
-        color: #0065FC;
-    }
-
-    .menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 60px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-
-    /*Barre de recherche*/
-    #recherche button {
-        height: 36px;
-        margin-left: -5px;
-        border-radius: 0 10px 10px 0;
-        background-color: #0065FC;
-        color: white;
-    }
-
-    #recherche a{
-        display: none;
-    }
-
-    /*Logements section + aside*/
-    #hebergement {
-        display: flex;
-    }
-
-    #hotel {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100%;
-    }
-
-    /*Logements de la ville*/
-    #logementVille {
-        width: 1040px;
-    }
-    
-}
-
-@media screen and (max-width: 800px)
-{
-    /*En-tête*/
-    header {
-        display: flex;
-        justify-content: space-between;
+        align-items: flex-start;
         margin: 20px 0 20px 60px;
     }
 
@@ -118,6 +61,65 @@ body {
         flex-direction: column-reverse;
     }
 
+}
+
+@media screen and (min-width: 800px)
+{
+    /*En-tête*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 60px;
+    }
+
+    header a:hover {
+        border-top: solid 2px #0065FC;
+        padding-top: 20px;
+        color: #0065FC;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 60px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+
+    /*Barre de recherche*/
+    #recherche button {
+        height: 36px;
+        margin-left: -5px;
+        border-radius: 0 10px 10px 0;
+        background-color: #0065FC;
+        color: white;
+    }
+
+    #recherche a{
+        display: none;
+    }
+
+    /*Logements section + aside*/
+    #hebergement {
+        display: flex;
+    }
+
+    /*Logements de la ville*/
+    #hotel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logementHotel{
+        flex: 0 1 calc(33% - .5em);
+        margin-bottom: 10px;
+    }
+    
 }
 
 /*Mise en page balises génériques*/
@@ -201,6 +203,10 @@ header a {
     flex-wrap: wrap;
 }
 
+.filtresWidth{
+    flex-basis: 10% 20% 20% 20% 30%;
+}
+
 #filtres p {
     font-weight: bold;
     display: flex;
@@ -231,7 +237,7 @@ header a {
     background-color: #DEEBFF;
 }
 
-.long p{
+.long {
     min-width: 130px;
 }
 
@@ -239,12 +245,11 @@ header a {
 
 .paragraphe i{
     margin-left: 60px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .infoPosition{
     position: absolute;
-    margin-left: 10px;
 }
 
 /*Logements de la ville*/
@@ -255,10 +260,7 @@ header a {
 
 .logementHotel {
     background-color: #DEEBFF;
-    border-radius: 15%;
-    width: 300px;
-    height: auto;
-    margin: 10px 30px;
+    border-radius: 25px;
 }
 
 .logementHotel:hover{
@@ -269,8 +271,8 @@ header a {
     width: 270px;
     height: 100px;
     object-fit: cover;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     padding: 15px;
 }
 
