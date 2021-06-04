@@ -64,31 +64,6 @@ body {
 }
 
 @media screen and (min-width: 800px)
-{
-    /*En-tête*/
-    header {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px 60px;
-    }
-
-    header a:hover {
-        border-top: solid 2px #0065FC;
-        padding-top: 20px;
-        color: #0065FC;
-    }
-
-    .menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 60px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
 
     /*Barre de recherche*/
     #recherche button {
@@ -109,10 +84,12 @@ body {
     }
 
     /*Logements de la ville*/
-       
-}
 
 /*Mise en page balises génériques*/
+
+h1 {
+    font-size: 1.5em;
+}
 
 h2 {
     font-size: 1.2em;

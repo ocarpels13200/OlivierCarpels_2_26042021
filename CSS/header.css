@@ -1,0 +1,19 @@
+/*En-tête*/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px;
+}
+
+header .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+header .menu ul li .{
+    border-top: solid 2px #0065FC;
+    padding-top: 20px;
+    color: #0065FC;
+}
