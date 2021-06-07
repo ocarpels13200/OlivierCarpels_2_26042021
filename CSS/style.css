@@ -6,86 +6,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/*Media queries*/
-
-@media screen and (max-width: 799px)
-{
-    /*En-tête*/
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin: 20px 0 20px 60px;
-    }
-
-    header ul li a:hover {
-        border-bottom: solid 2px #0065FC;
-        padding-bottom: 20px;
-        color: #0065FC;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-end;
-    }
-
-    h1 {
-        font-size: 1.3em;
-    }
-
-    /*Barre de recherche*/
-    #recherche button {
-        display: none;
-    }
-
-    #recherche a{
-        height: 36px;
-        margin-left: -5px;
-        border-radius: 0 10px 10px 0;
-    }
-
-    #recherche a i{
-        border-radius: 10px;
-        background-color: #0065FC;
-        color: white;
-    }
-
-    #filtres{
-        width: 90%;
-    }
-
-    /*Logements section + aside*/
-    #hebergement {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-}
-
-@media screen and (min-width: 800px)
-
-    /*Barre de recherche*/
-    #recherche button {
-        height: 36px;
-        margin-left: -5px;
-        border-radius: 0 10px 10px 0;
-        background-color: #0065FC;
-        color: white;
-    }
-
-    #recherche a{
-        display: none;
-    }
-
-    /*Logements section + aside*/
-    #hebergement {
-        display: flex;
-    }
-
-    /*Logements de la ville*/
-
-/*Mise en page balises génériques*/
+/*Balises génériques*/
 
 h1 {
     font-size: 1.5em;
@@ -112,51 +33,40 @@ section {
 }
 
 aside {
-    margin: 40px 60px;
+    margin: 40px 60px 40px 0;
 }
 
 .paragraphe{
     margin: 0;
 }
 
-/*En-tête*/
-
-header ul {
-    display: flex;
-}
-
-header ul li{
-    list-style: none;
-    margin-right: 30px;
-}
-
-header ul li a{
-    color: black;
-}
-
-header a {
-    font-size: 1em;
-}
-
-.menu p a{
-    color: #0065FC;
-    font-weight: bold;
-}
-
 /*Barre de recherche*/
 
 #recherche i {
-    padding: 10px;
-    background-color: #d4d1d1;
+    padding: 15px;
+    background-color: var(--grisCharte);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 #recherche input {
-    height: 36px;
+    height: 42px;
     width: 180px;
     margin-left: -4px;
     border: none;
+}
+
+#recherche button { /*Bouton pour grand écran*/
+    height: 42px;
+    padding: 0 10px;
+    margin-left: -5px;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--bleuCharte);
+    color: white;
+}
+
+#recherche a{ /*icone petit écran remplace bouton*/
+    display: none;
 }
 
 
@@ -170,66 +80,68 @@ header a {
     flex-wrap: wrap;
 }
 
-.filtresWidth{
-    flex-basis: 10% 20% 20% 20% 30%;
-}
-
 #filtres p {
     font-weight: bold;
     display: flex;
     align-items: center;
 }
 
-.choix {
+#filtres .choix {
     display: flex;
     align-items: center;
-    margin: 5px 20px;
     height: 35px;
-    border: solid 1px grey;
+    border: solid 3px var(--grisCharte);
+    border-left: transparent;
     border-radius: 25px;
 }
 
-.choix:hover{
+#filtres .choix:hover{
     background-color: #98b6cf;
 }
 
-.choix p{
-    padding: 0 20px;
-}
-
-.choix i {
+#filtres .choix i {
     padding: 10px;
-    color: #0065FC;
+    color: var(--bleuCharte);
     border-radius: 50px;
-    background-color: #DEEBFF;
+    background-color: var(--bleuClairCharte);
 }
 
-.long {
+#filtres .choix p{
+    padding: 0 10px;
+}
+
+#filtres .choix .long {
     min-width: 130px;
 }
 
-/*Logements section + aside*/
+/*Texte info nombre de logements trouvés*/
 
 .paragraphe i{
     margin-left: 60px;
     margin-right: 15px;
 }
 
-.infoPosition{
+.paragraphe .infoPosition{
     position: absolute;
 }
 
-/*Logements de la ville*/
+/*Logements section + aside*/
 
-#logementVille{
-    background-color: #F2F2F2;
+#hebergements {
+    display: flex;
 }
 
-#logementVille h2 {
+/*Hébergements disponibles*/
+
+#hebergementsDispo{
+    background-color: var(--grisCharte);
+}
+
+#hebergementsDispo h2 {
     margin-left: 20px;
 }
 
-#logementVille #hotel {
+#hebergementsDispo #hotelsDispo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -237,20 +149,23 @@ header a {
     min-height: 736px;
 }
 
-#logementVille #hotel .logementHotel{
+#hebergementsDispo #hotelsDispo .hotel{
     flex: 0 1 33.3333%;
     background-color: #fff;
     border-radius: 25px;
     max-width: var(--width-max-image-desc);
 }
 
-#logementVille #hotel .logementHotel a{
+#hebergementsDispo #hotelsDispo .hotel a{
     padding: 5px;
     display: block;
 }
-    
 
-#logementVille #hotel .logementHotel .imageHotel{
+#hebergementsDispo #hotelsDispo .hotel a:hover{
+    background-color: #98b6cf;
+}    
+
+#hebergementsDispo #hotelsDispo .hotel .hotelImg{
     max-width: var(--width-max-image-desc);
     height: 172px;
     border-top-left-radius: 25px;
@@ -258,37 +173,33 @@ header a {
     overflow: hidden;
 }
 
-#logementVille #hotel .logementHotel .imageHotel img{
+#hebergementsDispo #hotelsDispo .hotel .hotelImg img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.logementHotel:hover{
-    background-color: #98b6cf;
-}
-
-.logementHotel h3 {
+#hebergementsDispo #hotelsDispo .hotel .description h3 {
     margin-left: 20px;
     color: black;
 }
 
-.logementHotel p {
+#hebergementsDispo #hotelsDispo .hotel .description p {
     margin-left: 20px;
     color: black;
 }
 
-.logementHotel i {
-    color: #0065FC;
-}
-
-.note {
+#hebergementsDispo #hotelsDispo .hotel .description .note {
     padding-left: 10px;
     padding-bottom: 15px;
     margin-left: 10px;
 }
 
-#afficherPlus{
+#hebergementsDispo #hotelsDispo .hotel .description .note i {
+    color: #0065FC;
+}
+
+#hebergementsDispo #afficherPlus{
     margin-left: 20px;
     font-size: 1em;
     font-weight: bold;
@@ -297,57 +208,79 @@ header a {
 
 /*Logements les plus populaires*/
 
-#populaire h2 {
-    margin-left: 20px;
+#hebergementsPop{
+    background-color: var(--grisCharte);
 }
 
-#titre{
+#hebergementsPop #hebergementsPopTitre{
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#hotelPop {
+#hebergementsPop #hebergementsPopTitre h2 {
+    margin-left: 20px;
+}
+
+#hebergementsPop #hotelsPop {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: space-evenly;
+    min-width: 380px;
+    min-height: 736px;
+    margin: 0 10px;
 }
-
-.logementPop {
+ 
+#hebergementsPop #hotelsPop .hotelPop {
+    flex: 0 1 33.3333%;
     display: flex;
-    background-color: #DEEBFF;
-    border-radius: 15%;
-    width: 80%;
-    min-width: 300px;
-    height: 180px;
-    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 25px;
+    max-height: 180px;
 }
 
-.logementPop:hover{
+#hebergementsPop #hotelsPop .hotelPop:hover{
     background-color: #98b6cf;
 }
 
-.logementPop img {
-    width: 30%;
-    height: 150px;
+#hebergementsPop #hotelsPop .hotelPop a {
+    display: flex;
+    padding: 5px;
+}
+
+#hebergementsPop #hotelsPop .hotelPop .hotelPopImg {
+    max-width: 200px;
+    max-height: 220px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+}
+
+#hebergementsPop #hotelsPop .hotelPop .hotelPopImg img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-top-left-radius: 25%;
-    border-bottom-left-radius: 25%;
-    padding: 15px;
 }
 
-.logementPop h3 {
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip {
+}
+
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip h3 {
     margin-left: 10px;
     color: black;
 }
 
-.logementPop p {
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip p {
     margin-left: 10px;
     color: black;
 }
 
-.logementPop i {
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .note{
+    margin-left: 10px;
+}
+
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .note i {
     color: #0065FC;
 }
 
@@ -355,54 +288,78 @@ header a {
 
 #activites{
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
 
-.grandeImg{
-    border: solid 1px grey;
+#activites .grandFormat{
+    border: solid 2px var(--grisCharte);
     border-radius: 20px;
-    min-width: 300px;
-    width: 300px;
-    height: 450px;
+    background-color: #fff;
+    max-width: 300px;
+    max-height: 450px;
 }
 
-.grandeImg:hover{
+#activites .grandFormat a{
+    display: block;
+}
+
+#activites .grandFormat a:hover{
     background-color: #98b6cf;
 }
 
-.grandeImg img {
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-    border-top-left-radius: 6%;
-    border-top-right-radius: 6%;
+#activites .grandFormat .grandeImg{
+    max-width: 300px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
 }
 
-.petit {
+#activites .grandFormat .grandeImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#activites .groupePetitFormat {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    align-content: space-between;
+    max-width: 300px;
+    max-height: 450px;
 }
 
-.petiteImg{
-    border: solid 1px grey;
+#activites .groupePetitFormat .petitFormat{
+    border: solid 2px var(--grisCharte);
     border-radius: 20px;
-    width: 300px;
-    height: 205px;
-    margin: 0 30px 40px 30px;
+    background-color: #fff;
+    max-width: 300px;
+    max-height: 210px;
 }
 
-.petiteImg:hover{
+#activites .groupePetitFormat .petitFormat a{
+    display: block;
+}
+
+#activites .groupePetitFormat .petitFormat:hover{
     background-color: #98b6cf;
 }
 
-.petiteImg img {
+#activites .groupePetitFormat .petitFormat .petiteImg{
+    max-width: 300px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+#activites .groupePetitFormat .petitFormat .petiteImg img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
-    border-top-left-radius: 9%;
-    border-top-right-radius: 9%;
 }
 
 .texteActivites{
@@ -427,8 +384,3 @@ header a {
 .menuPP P {
     font-size: 0.8em;
 }
-
-
- :root{
-     --width-max-image-desc: 350px;
- }
