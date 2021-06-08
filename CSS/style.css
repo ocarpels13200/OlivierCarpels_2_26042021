@@ -263,9 +263,6 @@ aside {
     object-fit: cover;
 }
 
-#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip {
-}
-
 #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip h3 {
     margin-left: 10px;
     color: black;
@@ -288,21 +285,22 @@ aside {
 
 #activites{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
 }
 
 #activites .grandFormat{
     border: solid 2px var(--grisCharte);
     border-radius: 20px;
     background-color: #fff;
-    max-width: 300px;
-    max-height: 450px;
+    width: 20%;
+    height: 450px;
 }
 
 #activites .grandFormat a{
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
 #activites .grandFormat a:hover{
@@ -310,8 +308,8 @@ aside {
 }
 
 #activites .grandFormat .grandeImg{
-    max-width: 300px;
-    height: 450px;
+    width: 100%;
+    height: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
@@ -323,25 +321,45 @@ aside {
     object-fit: cover;
 }
 
+#activites .grandFormat .descriptionActivite{
+    margin-left: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+
 #activites .groupePetitFormat {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
-    max-width: 300px;
-    max-height: 450px;
+    width: 25%;
+    height: 454px;
 }
 
-#activites .groupePetitFormat .petitFormat{
+#activites .petitFormat{
     border: solid 2px var(--grisCharte);
     border-radius: 20px;
     background-color: #fff;
-    max-width: 300px;
-    max-height: 210px;
+    width: 100%;
+    height: 454px;
+}
+
+#activites .groupePetitFormat .petitFormatTailleHaute{
+    height: 250px;
+}
+
+#activites .groupePetitFormat .petitFormatTailleBasse{
+    height: 150px;
+}
+
+#activites .groupePetitFormat .petitFormatTailleMoyenne{
+    height: 200px;
 }
 
 #activites .groupePetitFormat .petitFormat a{
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
 #activites .groupePetitFormat .petitFormat:hover{
@@ -349,11 +367,26 @@ aside {
 }
 
 #activites .groupePetitFormat .petitFormat .petiteImg{
-    max-width: 300px;
-    height: 200px;
+    max-width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
+}
+
+#activites .groupePetitFormat .petitFormatTailleHaute .petiteImg{
+    height: 200px;
+}
+
+#activites .groupePetitFormat .petitFormatTailleBasse .petiteImg{
+    height: 100px;
+}
+
+#activites .groupePetitFormat .petitFormatTailleHaute .petiteImg{
+    height: 200px;
+}
+
+#activites .groupePetitFormat .petitFormatTailleMoyenne .petiteImg{
+    height: 150px;
 }
 
 #activites .groupePetitFormat .petitFormat .petiteImg img {
@@ -362,25 +395,8 @@ aside {
     object-fit: cover;
 }
 
-.texteActivites{
+#activites .groupePetitFormat .petitFormat .descriptionActivite{
     margin-left: 10px;
     font-weight: bold;
     color: black;
-}
-
-/*Pied de page*/
-
-#piedPage {
-    display: flex;
-    justify-content: space-between;
-    width: 66%;
-    margin: 40px 0 0 60px;
-}
-
-.menuPP h2 {
-    font-size: 1em;
-}
-
-.menuPP P {
-    font-size: 0.8em;
 }
