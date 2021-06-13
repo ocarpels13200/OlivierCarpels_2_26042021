@@ -104,11 +104,14 @@ main .titre p{
 /*Texte info nombre de logements trouvés*/
 
 .paragraphe i{
-    margin-left: 60px;
+    margin-top: 20px;
     margin-right: 15px;
+    margin-bottom: 50px;
 }
 
 .paragraphe .infoPosition{
+
+    margin-top: 20px;
     position: absolute;
 }
 
@@ -121,11 +124,12 @@ main .titre p{
 /*Hébergements disponibles*/
 
 #hebergementsDispo{
+    margin-right: 50px;
     background-color: var(--grisCharte);
 }
 
 #hebergementsDispo h2 {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 #hebergementsDispo #hotelsDispo {
@@ -137,7 +141,6 @@ main .titre p{
 }
 
 #hebergementsDispo #hotelsDispo .hotel{
-    flex: 0 1 33.3333%;
     background-color: #fff;
     border-radius: 25px;
     max-width: var(--width-max-image-desc);
@@ -416,7 +419,8 @@ main .titre p{
     #filtres {
         margin-top: 30px;
         width: 90%;
-        font-size: 0.8em;
+        height: 280px;
+        font-size: 1em;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -424,7 +428,13 @@ main .titre p{
 
     #filtres p {
         width: 100%;
+        padding-bottom: 20px;
     }
+
+        /*Hébergements disponibles*/
+        #hebergementsDispo #hotelsDispo .hotel{
+            flex: 0 0 100%;
+        }
 
 }
 
@@ -454,6 +464,11 @@ main .titre p{
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
+        /*Hébergements disponibles*/
+        #hebergementsDispo #hotelsDispo .hotel{
+            flex: 0 0 50%;
+        }
 }
 
 /*Media queries*/
@@ -473,14 +488,18 @@ main .titre p{
         display: none;
     }
 
-        /*Filtres*/
-        #filtres {
-            margin-top: 30px;
-            width: 75%;
-            font-size: 1.2em;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+    /*Filtres*/
+    #filtres {
+        margin-top: 30px;
+        width: 75%;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     
+    /*Hébergements disponibles*/
+    #hebergementsDispo #hotelsDispo .hotel{
+        flex: 0 0 33.3333%;
+    }
 }
