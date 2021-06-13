@@ -6,10 +6,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-main{
-    border: solid 1px red;
-}
-
 /*Balises génériques*/
 
 h1 {
@@ -392,6 +388,10 @@ main .titre p{
 }
 
 @media screen and (max-width: 599px){
+
+    body{
+        width: auto;
+    }
 
     /*Barre de recherche*/
     #recherche button { /*Bouton pour grand écran*/
