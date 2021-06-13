@@ -9,7 +9,7 @@ body {
 /*Balises génériques*/
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 h2 {
@@ -28,12 +28,9 @@ a {
     text-decoration: none;
 }
 
-section {
-    margin: 40px 60px;
-}
-
-aside {
-    margin: 40px 60px 40px 0;
+.max-width{
+    max-width: 1500px;
+    margin: auto;
 }
 
 .paragraphe{
@@ -41,6 +38,14 @@ aside {
 }
 
 /*Barre de recherche*/
+
+main .titre p{
+    font-size: 1.3em;
+}
+
+#recherche {
+    display: flex;
+}
 
 #recherche i {
     padding: 15px;
@@ -50,31 +55,20 @@ aside {
 }
 
 #recherche input {
-    height: 42px;
-    width: 180px;
+    height: auto;
+    width: 400px;
     margin-left: -4px;
     border: none;
+    font-size: 1.5em;
+    font-weight: bold;
 }
-
-#recherche button { /*Bouton pour grand écran*/
-    height: 42px;
-    padding: 0 10px;
-    margin-left: -5px;
-    border-radius: 0 10px 10px 0;
-    background-color: var(--bleuCharte);
-    color: white;
-}
-
-#recherche a{ /*icone petit écran remplace bouton*/
-    display: none;
-}
-
 
 /*Filtres*/
 
 #filtres {
-    margin-top: 40px;
-    width: 60%;
+    margin-top: 30px;
+    width: 75%;
+    font-size: 1.2em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -87,9 +81,10 @@ aside {
 }
 
 #filtres .choix {
+    padding: 0px 10px;
     display: flex;
     align-items: center;
-    height: 35px;
+    height: 46px;
     border: solid 3px var(--grisCharte);
     border-left: transparent;
     border-radius: 25px;
@@ -100,7 +95,8 @@ aside {
 }
 
 #filtres .choix i {
-    padding: 10px;
+    margin-left: -10px;
+    padding: 15px;
     color: var(--bleuCharte);
     border-radius: 50px;
     background-color: var(--bleuClairCharte);
@@ -210,6 +206,7 @@ aside {
 
 #hebergementsPop{
     background-color: var(--grisCharte);
+    width: 30%;
 }
 
 #hebergementsPop #hebergementsPopTitre{
@@ -227,17 +224,15 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-width: 380px;
+    width: 80%;
     min-height: 736px;
-    margin: 0 10px;
+    margin: auto;
 }
  
 #hebergementsPop #hotelsPop .hotelPop {
-    flex: 0 1 33.3333%;
-    display: flex;
     background-color: #fff;
     border-radius: 25px;
-    max-height: 180px;
+    max-height: 160px;
 }
 
 #hebergementsPop #hotelsPop .hotelPop:hover{
@@ -250,8 +245,8 @@ aside {
 }
 
 #hebergementsPop #hotelsPop .hotelPop .hotelPopImg {
-    max-width: 200px;
-    max-height: 220px;
+    width: 130px;
+    height: 150px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     overflow: hidden;
@@ -261,6 +256,12 @@ aside {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip h3 {
@@ -399,4 +400,60 @@ aside {
     margin-left: 10px;
     font-weight: bold;
     color: black;
+}
+
+@media screen and (max-width: 599px){
+
+    #recherche button { /*Bouton pour grand écran*/
+        display: none;
+    }
+    
+    #recherche a{ /*icone petit écran remplace bouton*/
+        height: 46px;
+        padding: 0 10px;
+        margin-left: -5px;
+        border-radius: 0 10px 10px 0;
+        color: white;
+    }
+
+    #recherche a i{
+        background-color: var(--bleuCharte);
+    }
+
+}
+
+/*Media queries*/
+@media screen and (min-width: 600px) and (max-width: 1023px){
+
+    #recherche button { /*Bouton pour grand écran*/
+        height: auto;
+        padding: 0 10px;
+        margin-left: -5px;
+        border-radius: 0 10px 10px 0;
+        background-color: var(--bleuCharte);
+        color: white;
+    }
+    
+    #recherche a{ /*icone petit écran remplace bouton*/
+        display: none;
+    }
+    
+}
+
+/*Media queries*/
+@media screen and (min-width: 1024px){
+
+    #recherche button { /*Bouton pour grand écran*/
+        height: auto;
+        padding: 0 10px;
+        margin-left: -5px;
+        border-radius: 0 10px 10px 0;
+        background-color: var(--bleuCharte);
+        color: white;
+    }
+    
+    #recherche a{ /*icone petit écran remplace bouton*/
+        display: none;
+    }
+    
 }
