@@ -115,12 +115,6 @@ main .titre p{
     position: absolute;
 }
 
-/*Logements section + aside*/
-
-#hebergements {
-    display: flex;
-}
-
 /*Hébergements disponibles*/
 
 #hebergementsDispo{
@@ -431,10 +425,16 @@ main .titre p{
         padding-bottom: 20px;
     }
 
-        /*Hébergements disponibles*/
-        #hebergementsDispo #hotelsDispo .hotel{
-            flex: 0 0 100%;
+        /*Logements section + aside*/
+        #hebergements {
+            display: flex;
+            flex-direction: column-reverse;
         }
+
+    /*Hébergements disponibles*/
+    #hebergementsDispo #hotelsDispo .hotel{
+        flex: 0 0 100%;
+    }
 
 }
 
@@ -465,10 +465,15 @@ main .titre p{
         flex-wrap: wrap;
     }
 
-        /*Hébergements disponibles*/
-        #hebergementsDispo #hotelsDispo .hotel{
-            flex: 0 0 50%;
+        /*Logements section + aside*/
+        #hebergements {
+            display: flex;
         }
+
+    /*Hébergements disponibles*/
+    #hebergementsDispo #hotelsDispo .hotel{
+        flex: 0 0 50%;
+    }
 }
 
 /*Media queries*/
@@ -496,6 +501,11 @@ main .titre p{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    /*Logements section + aside*/
+    #hebergements {
+        display: flex;
     }
     
     /*Hébergements disponibles*/
