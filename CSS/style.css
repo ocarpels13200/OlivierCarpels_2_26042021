@@ -389,8 +389,12 @@ main .titre p{
 
 @media screen and (max-width: 599px){
 
-    body{
-        width: auto;
+    h1 {
+        font-size: 1.5em;
+    }
+
+    main .titre p{
+        font-size: 1.1em;
     }
 
     /*Barre de recherche*/
