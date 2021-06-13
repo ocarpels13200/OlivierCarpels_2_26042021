@@ -6,6 +6,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+main{
+    border: solid 1px red;
+}
+
 /*Balises génériques*/
 
 h1 {
@@ -118,7 +122,6 @@ main .titre p{
 /*Hébergements disponibles*/
 
 #hebergementsDispo{
-    margin-right: 50px;
     background-color: var(--grisCharte);
 }
 
@@ -194,7 +197,6 @@ main .titre p{
 
 #hebergementsPop{
     background-color: var(--grisCharte);
-    width: 30%;
 }
 
 #hebergementsPop #hebergementsPopTitre{
@@ -465,14 +467,24 @@ main .titre p{
         flex-wrap: wrap;
     }
 
-        /*Logements section + aside*/
-        #hebergements {
-            display: flex;
-        }
+    /*Logements section + aside*/
+    #hebergements {
+        display: flex;
+        justify-content: space-between;
+    }
 
     /*Hébergements disponibles*/
+    #hebergementsDispo{
+        flex: 0 0 58%;
+    }
+
     #hebergementsDispo #hotelsDispo .hotel{
         flex: 0 0 50%;
+    }
+
+    /*Logements les plus populaires*/
+    #hebergementsPop{
+        flex: 0 0 38%;
     }
 }
 
@@ -505,11 +517,23 @@ main .titre p{
 
     /*Logements section + aside*/
     #hebergements {
+        border: solid 1px green;
         display: flex;
+        justify-content: space-between;
     }
     
     /*Hébergements disponibles*/
+    #hebergementsDispo{
+        flex: 0 0 68%;
+
+    }
+
     #hebergementsDispo #hotelsDispo .hotel{
         flex: 0 0 33.3333%;
+    }
+
+    /*Logements les plus populaires*/
+    #hebergementsPop{
+        flex: 0 0 28%;
     }
 }
