@@ -65,15 +65,6 @@ main .titre p{
 
 /*Filtres*/
 
-#filtres {
-    margin-top: 30px;
-    width: 75%;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 #filtres p {
     font-weight: bold;
     display: flex;
@@ -404,6 +395,7 @@ main .titre p{
 
 @media screen and (max-width: 599px){
 
+    /*Barre de recherche*/
     #recherche button { /*Bouton pour grand écran*/
         display: none;
     }
@@ -420,11 +412,26 @@ main .titre p{
         background-color: var(--bleuCharte);
     }
 
+    /*Filtres*/
+    #filtres {
+        margin-top: 30px;
+        width: 90%;
+        font-size: 0.8em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #filtres p {
+        width: 100%;
+    }
+
 }
 
 /*Media queries*/
 @media screen and (min-width: 600px) and (max-width: 1023px){
 
+    /*Barre de recherche*/
     #recherche button { /*Bouton pour grand écran*/
         height: auto;
         padding: 0 10px;
@@ -437,12 +444,22 @@ main .titre p{
     #recherche a{ /*icone petit écran remplace bouton*/
         display: none;
     }
-    
+
+    /*Filtres*/
+    #filtres {
+        margin-top: 30px;
+        width: 75%;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 /*Media queries*/
 @media screen and (min-width: 1024px){
 
+    /*Barre de recherche*/
     #recherche button { /*Bouton pour grand écran*/
         height: auto;
         padding: 0 10px;
@@ -455,5 +472,15 @@ main .titre p{
     #recherche a{ /*icone petit écran remplace bouton*/
         display: none;
     }
+
+        /*Filtres*/
+        #filtres {
+            margin-top: 30px;
+            width: 75%;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     
 }
