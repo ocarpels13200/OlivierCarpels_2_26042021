@@ -207,22 +207,21 @@ main .titre p{
 }
 
 #hebergementsPop #hebergementsPopTitre h2 {
-    margin-left: 20px;
+    margin: 0px;
+    padding: 25px;
 }
 
 #hebergementsPop #hotelsPop {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 80%;
-    min-height: 736px;
     margin: auto;
 }
  
 #hebergementsPop #hotelsPop .hotelPop {
     background-color: #fff;
     border-radius: 25px;
-    max-height: 160px;
+    height: 160px;
 }
 
 #hebergementsPop #hotelsPop .hotelPop:hover{
@@ -427,15 +426,21 @@ main .titre p{
         padding-bottom: 20px;
     }
 
-        /*Logements section + aside*/
-        #hebergements {
-            display: flex;
-            flex-direction: column-reverse;
-        }
+    /*Logements section + aside*/
+    #hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     /*Hébergements disponibles*/
     #hebergementsDispo #hotelsDispo .hotel{
         flex: 0 0 100%;
+    }
+
+    /*Logements les plus populaires*/
+    #hebergementsPop #hotelsPop {
+        min-height: 550px;
+        width: 90%;
     }
 
 }
@@ -486,6 +491,11 @@ main .titre p{
     #hebergementsPop{
         flex: 0 0 38%;
     }
+
+    #hebergementsPop #hotelsPop {
+        min-height: 736px;
+    }
+
 }
 
 /*Media queries*/
@@ -535,5 +545,9 @@ main .titre p{
     /*Logements les plus populaires*/
     #hebergementsPop{
         flex: 0 0 28%;
+    }
+
+    #hebergementsPop #hotelsPop {
+        min-height: 736px;
     }
 }
