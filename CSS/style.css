@@ -463,6 +463,10 @@ main .titre p{
         justify-content: space-between;
     }
 
+    .activitesMars {
+        margin-left: 20px;
+    }
+
     #activites .grandFormat{
         width: 90%;
         margin: auto;
@@ -489,7 +493,7 @@ main .titre p{
 
     #activites .groupePetitFormat .petitFormatTailleBasse .petiteImg,
     #activites .groupePetitFormat .petitFormatTailleMoyenne .petiteImg,
-    #activites .groupePetitFormat .petitFormatTailleHaute .petiteImg    
+    #activites .groupePetitFormat .petitFormatTailleHaute .petiteImg,    
     {
         height: 150px;
     }
@@ -578,7 +582,6 @@ main .titre p{
 
     /*Logements section + aside*/
     #hebergements {
-        border: solid 1px green;
         display: flex;
         justify-content: space-between;
     }

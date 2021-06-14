@@ -44,10 +44,6 @@
 
 /*Media queries*/
 @media screen and (max-width: 599px){
-    body{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
     /*En-tête*/
     #header #top-header {
