@@ -3,22 +3,31 @@
     background-color: var(--grisCharte);
 }
 
-#footer .piedPage {
-    display: flex;
-    margin-top: 80px;
-    padding: 40px 0;
-}
-
-
-#footer .piedPage .menuPP{
-    margin: 0 0 0 60px;
-    flex: auto;
-}
-
 .menuPP h2 {
     font-size: 1em;
 }
 
 .menuPP P {
     font-size: 0.8em;
+}
+
+@media screen and (max-width: 599px){
+    #footer .piedPage {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #footer .piedPage {
+        display: flex;
+        margin-top: 80px;
+        padding: 40px 0;
+    }
+    
+    #footer .piedPage .menuPP{
+        margin: 0 0 0 60px;
+        flex: auto;
+    }
 }

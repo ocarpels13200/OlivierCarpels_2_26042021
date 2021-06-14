@@ -367,10 +367,6 @@ main .titre p{
     height: 100px;
 }
 
-#activites .groupePetitFormat .petitFormatTailleHaute .petiteImg{
-    height: 200px;
-}
-
 #activites .groupePetitFormat .petitFormatTailleMoyenne .petiteImg{
     height: 150px;
 }
@@ -398,6 +394,10 @@ main .titre p{
     }
 
     /*Barre de recherche*/
+    #recherche input {
+        width: 250px;
+    }
+
     #recherche button { /*Bouton pour grand écran*/
         display: none;
     }
@@ -437,14 +437,62 @@ main .titre p{
     }
 
     /*Hébergements disponibles*/
+    #hebergementsDispo{
+        background-color: #fff;
+    }
+
     #hebergementsDispo #hotelsDispo .hotel{
         flex: 0 0 100%;
+        margin-bottom: 10px;
+        box-shadow: 10px 10px 10px var(--grisCharte);
+    }
+
+    #hebergementsDispo #hotelsDispo .hotel .hotelImg{
+        height: 100px;
     }
 
     /*Logements les plus populaires*/
     #hebergementsPop #hotelsPop {
         min-height: 550px;
         width: 90%;
+    }
+
+    /*Liste des activités*/
+    #activites{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #activites .grandFormat{
+        width: 90%;
+        margin: auto;
+        height: 200px;
+        margin-bottom: 10px;
+        box-shadow: 10px 10px 10px var(--grisCharte);
+    }
+
+    #activites .grandFormat .grandeImg{
+        height: 150px;
+    }
+
+    #activites .groupePetitFormat {
+        width: 90%;
+        margin: auto;
+        height: 420px;
+    }
+
+    #activites .petitFormat{
+        height: 200px;
+        margin-bottom: 10px;
+        box-shadow: 10px 10px 10px var(--grisCharte);
+    }
+
+    #activites .groupePetitFormat .petitFormatTailleBasse .petiteImg,
+    #activites .groupePetitFormat .petitFormatTailleMoyenne .petiteImg,
+    #activites .groupePetitFormat .petitFormatTailleHaute .petiteImg    
+    {
+        height: 150px;
     }
 
 }
