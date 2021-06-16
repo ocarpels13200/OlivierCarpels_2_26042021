@@ -13,11 +13,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 p {
@@ -56,7 +56,7 @@ main .titre p{
 
 #recherche input {
     height: auto;
-    width: 400px;
+    width: 350px;
     margin-left: -4px;
     border: none;
     font-size: 1.5em;
@@ -104,13 +104,13 @@ main .titre p{
 /*Texte info nombre de logements trouvés*/
 
 .paragraphe i{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 15px;
     margin-bottom: 50px;
 }
 
 .paragraphe .infoPosition{
-    margin-top: 20px;
+    margin-top: 30px;
     position: absolute;
 }
 
@@ -121,7 +121,8 @@ main .titre p{
 }
 
 #hebergementsDispo h2 {
-    margin-left: 50px;
+    margin-left: 15px;
+    margin-top: 25px;
 }
 
 #hebergementsDispo #hotelsDispo {
@@ -183,6 +184,7 @@ main .titre p{
 
 #hebergementsDispo #afficherPlus{
     margin-left: 20px;
+    margin-bottom: 50px;
     font-size: 1em;
     font-weight: bold;
 }
@@ -195,7 +197,7 @@ main .titre p{
 }
 
 #hebergementsPop #hebergementsPopTitre{
-    width: 80%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,20 +205,21 @@ main .titre p{
 
 #hebergementsPop #hebergementsPopTitre h2 {
     margin: 0px;
-    padding: 25px;
+    padding: 20px;
 }
 
 #hebergementsPop #hotelsPop {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: auto;
+    align-items: center;
 }
  
 #hebergementsPop #hotelsPop .hotelPop {
     background-color: #fff;
     border-radius: 25px;
-    height: 160px;
+    height: 213px;
+    width: 380px;
 }
 
 #hebergementsPop #hotelsPop .hotelPop:hover{
@@ -226,11 +229,12 @@ main .titre p{
 #hebergementsPop #hotelsPop .hotelPop a {
     display: flex;
     padding: 5px;
+    height: 100%;
 }
 
 #hebergementsPop #hotelsPop .hotelPop .hotelPopImg {
     width: 130px;
-    height: 150px;
+    height: 203px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     overflow: hidden;
@@ -245,21 +249,27 @@ main .titre p{
 #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    height: 100%;
+    margin-left: 20px;
 }
 
-#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip h3 {
-    margin-left: 10px;
-    color: black;
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .hotelPopDes {
+    margin-bottom: auto;
 }
 
-#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip p {
-    margin-left: 10px;
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .hotelPopDes h3 {
     color: black;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .hotelPopDes p {
+    color: black;
+    margin: 0px;
 }
 
 #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .note{
-    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .note i {
@@ -311,7 +321,6 @@ main .titre p{
     font-weight: bold;
     color: black;
 }
-
 
 #activites .groupePetitFormat {
     display: flex;
@@ -486,9 +495,15 @@ main .titre p{
     }
 
     #activites .petitFormat{
-        height: 200px;
         margin-bottom: 10px;
         box-shadow: 10px 10px 10px var(--grisCharte);
+    }
+
+    #activites .groupePetitFormat .petitFormatTailleBasse,
+    #activites .groupePetitFormat .petitFormatTailleMoyenne,
+    #activites .groupePetitFormat .petitFormatTailleHaute,    
+    {
+        height: 150px;
     }
 
     #activites .groupePetitFormat .petitFormatTailleBasse .petiteImg,
