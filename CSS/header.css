@@ -50,6 +50,10 @@
         margin: 20px 0 20px 0;
     }
 
+    #header #top-header #logo{
+        margin-left: 20px;
+    }
+
     #header #top-header .menu .liens ul{
         padding: 0px;
     }
