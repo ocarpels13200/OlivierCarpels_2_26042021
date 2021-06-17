@@ -469,8 +469,20 @@ main .titre p{
 
     /*Logements les plus populaires*/
     #hebergementsPop #hotelsPop {
-        min-height: 550px;
-        width: 90%;
+        min-height: 700px;
+    }
+
+    #hebergementsPop #hotelsPop .hotelPop {
+        width: 320px;
+        height: 190px;
+    }
+
+    #hebergementsPop #hotelsPop .hotelPop .hotelPopImg {
+        height: 180px;
+    }
+
+    #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .hotelPopDes h3 {
+        font-size: 1em;
     }
 
     /*Liste des activités*/
