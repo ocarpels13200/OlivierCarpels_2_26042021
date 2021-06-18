@@ -11,6 +11,16 @@
     font-size: 0.8em;
 }
 
+#footer .menuPP ul {
+    list-style: none;
+    line-height: 25px;
+    padding-left: 0px;
+}
+
+#footer .menuPP ul li a {
+    color: #000;
+}
+
 @media screen and (max-width: 599px){
     #footer .piedPage {
         display: flex;
