@@ -55,11 +55,8 @@ main .titre p{
 }
 
 #recherche input {
-    height: auto;
     width: 350px;
-    margin-left: -4px;
     border: none;
-    font-size: 1.5em;
 }
 
 #search::placeholder {
@@ -70,6 +67,14 @@ main .titre p{
 }
 
 /*Filtres*/
+    #filtres {
+        margin-top: 30px;
+        width: 75%;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
 #filtres p {
     font-weight: bold;
@@ -80,7 +85,6 @@ main .titre p{
 #filtres .choix {
     padding: 0px 10px;
     display: flex;
-    align-items: center;
     height: 46px;
     border: solid 3px var(--grisCharte);
     border-left: transparent;
@@ -123,7 +127,7 @@ main .titre p{
     border-radius: 50px;
     border: solid 1px #DDD;
     position: relative;
-    top: -6px;
+    top: -9px;
 }
 
 .paragraphe .infoPosition{
@@ -133,6 +137,7 @@ main .titre p{
 
 /*Hébergements disponibles*/
 #hebergements{
+    display: flex;
     margin-top: 30px;
 }
 
@@ -169,7 +174,6 @@ main .titre p{
 }    
 
 #hebergementsDispo #hotelsDispo .hotel .hotelImg{
-    max-width: var(--width-max-image-desc);
     height: 172px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -195,9 +199,8 @@ main .titre p{
 }
 
 #hebergementsDispo #hotelsDispo .hotel .description .note {
-    padding-left: 10px;
-    padding-bottom: 15px;
-    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
 }
 
 #hebergementsDispo #hotelsDispo .hotel .description .note i {
@@ -236,7 +239,6 @@ main .titre p{
 #hebergementsPop #hotelsPop {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
  
@@ -275,7 +277,6 @@ main .titre p{
 #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip {
     display: flex;
     flex-direction: column;
-    height: 100%;
     margin-left: 20px;
 }
 
@@ -320,7 +321,6 @@ main .titre p{
     border-radius: 20px;
     background-color: #fff;
     width: 20%;
-    height: 450px;
 }
 
 #activites .grandFormat a{
@@ -358,7 +358,6 @@ main .titre p{
     flex-direction: column;
     justify-content: space-between;
     width: 25%;
-    height: 454px;
 }
 
 #activites .petitFormat{
@@ -422,7 +421,7 @@ main .titre p{
     color: black;
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 599px) /*Mode smartphone*/{
 
     h1 {
         margin-left: 20px;
@@ -441,10 +440,6 @@ main .titre p{
         width: 90%;
     }
 
-    #recherche input {
-        width: 255px;
-    }
-
     #recherche button { /*Bouton pour grand écran*/
         display: none;
     }
@@ -461,14 +456,10 @@ main .titre p{
 
     /*Filtres*/
     #filtres {
-        margin-top: 30px;
         margin-left: 20px;
         width: 90%;
         height: 280px;
         font-size: 0.8em;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
 
     #filtres p {
@@ -482,7 +473,6 @@ main .titre p{
 
     /*Logements section + aside*/
     #hebergements {
-        display: flex;
         flex-direction: column-reverse;
     }
 
@@ -508,20 +498,9 @@ main .titre p{
     }
 
     /*Logements les plus populaires*/
-    #hebergementsPop{
-        padding: 15px 0px;
-    }
 
     #hebergementsPop #hotelsPop {
-        min-height: 700px;
-    }
-
-    #hebergementsPop #hotelsPop .hotelPop {
-        height: 190px;
-    }
-
-    #hebergementsPop #hotelsPop .hotelPop .hotelPopImg {
-        height: 180px;
+        min-height: 680px;
     }
 
     #hebergementsPop #hotelsPop .hotelPop .hotelPopDescrip .hotelPopDes h3 {
@@ -530,9 +509,7 @@ main .titre p{
 
     /*Liste des activités*/
     #activites{
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .activitesMars {
@@ -578,11 +555,10 @@ main .titre p{
 }
 
 /*Media queries*/
-@media screen and (min-width: 600px) and (max-width: 1023px){
+@media screen and (min-width: 600px) and (max-width: 1023px) /*Mode tablette*/{
 
     /*Barre de recherche*/
     #recherche button { /*Bouton pour grand écran*/
-        height: auto;
         padding: 0 10px;
         margin-left: -5px;
         border-radius: 0 10px 10px 0;
@@ -594,21 +570,9 @@ main .titre p{
         display: none;
     }
 
-    /*Filtres*/
-    #filtres {
-        margin-top: 30px;
-        width: 75%;
-        font-size: 1.2em;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
     /*Logements section + aside*/
     #hebergements {
-        display: flex;
         justify-content: space-between;
-
         margin-bottom: 80px;
     }
 
@@ -633,11 +597,10 @@ main .titre p{
 }
 
 /*Media queries*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) /*Mode desktop*/{
 
     /*Barre de recherche*/
     #recherche button { /*Bouton pour grand écran*/
-        height: auto;
         padding: 0 10px;
         margin-left: -5px;
         border-radius: 0 15px 15px 0;
@@ -649,19 +612,8 @@ main .titre p{
         display: none;
     }
 
-    /*Filtres*/
-    #filtres {
-        margin-top: 30px;
-        width: 75%;
-        font-size: 1.2em;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
     /*Logements section + aside*/
     #hebergements {
-        display: flex;
         justify-content: space-between;
         margin-bottom: 80px;
     }
