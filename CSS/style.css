@@ -139,7 +139,7 @@ main .titre p{
     background-color: var(--grisCharte);
 }
 
-#hebergementsDispo h2 {
+#hebergementsDispo  h2 {
     flex-basis: 97%;
     margin: 0px;
 }
@@ -204,8 +204,7 @@ main .titre p{
 }
 
 #hebergementsDispo #afficherPlus{
-    margin-left: 20px;
-    margin-bottom: 50px;
+    flex-basis: 97%;
     font-size: 1em;
     font-weight: bold;
 }
@@ -218,7 +217,7 @@ main .titre p{
 }
 
 #hebergementsPop #hebergementsPopTitre{
-    width: 95%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -239,9 +238,9 @@ main .titre p{
 #hebergementsPop #hotelsPop .hotelPop {
     background-color: #fff;
     border-radius: 25px;
-    height: 213px;
-    width: 380px;
-    margin-top: 40px;
+    height: 180px;
+    width: 90%;
+    margin-bottom: 25px;
 }
 
 #hebergementsPop #hotelsPop .hotelPop:hover{
@@ -256,7 +255,7 @@ main .titre p{
 
 #hebergementsPop #hotelsPop .hotelPop .hotelPopImg {
     width: 130px;
-    height: 203px;
+    height: 170px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     overflow: hidden;
@@ -549,8 +548,7 @@ main .titre p{
 
     #activites .groupePetitFormat .petitFormatTailleBasse .petiteImg,
     #activites .groupePetitFormat .petitFormatTailleMoyenne .petiteImg,
-    #activites .groupePetitFormat .petitFormatTailleHaute .petiteImg,    
-    {
+    #activites .groupePetitFormat .petitFormatTailleHaute .petiteImg, {
         height: 150px;
     }
 
@@ -655,9 +653,5 @@ main .titre p{
     /*Logements les plus populaires*/
     #hebergementsPop{
         flex: 0 0 28%;
-    }
-
-    #hebergementsPop #hotelsPop {
-        min-height: 736px;
     }
 }
