@@ -71,17 +71,17 @@
 
     #header #top-header .menu .liens ul li .lienMenu1 {
        padding-bottom: 10px;
-       border-bottom: solid 1px var(--bleuCharte);
+       border-bottom: solid 2px var(--bleuCharte);
     }
 
     #header #top-header .menu .liens ul li .lienMenu2 {
         padding-bottom: 10px;
-        border-bottom: solid 1px var(--grisCharte);
+        border-bottom: solid 2px var(--grisCharte);
     }
 
     #header #top-header .menu .liens ul li .lienMenu2:hover {
         padding-bottom: 10px;
-        border-bottom: solid 1px var(--bleuCharte);
+        border-bottom: solid 2px var(--bleuCharte);
     }
 
      #header #top-header .menu .inscription {
@@ -111,11 +111,11 @@
     }
     
     #header #top-header .menu .liens ul li .lienMenu1{
-        border-top: solid 2px #0065FC;
+        border-top: solid 2px var(--bleuCharte);
     }
 
     #header #top-header .menu .liens ul li .lienMenu2:hover{
-        border-top: solid 2px #0065FC;
+        border-top: solid 2px var(--bleuCharte);
     }
     
 }
