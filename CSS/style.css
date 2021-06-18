@@ -127,7 +127,7 @@ main .titre p{
 }
 
 .paragraphe .infoPosition{
-    font-size: 1.3em;
+    font-size: 1.2em;
     position: absolute;
 }
 
@@ -230,7 +230,7 @@ main .titre p{
 
 #hebergementsPop #hebergementsPopTitre h2 {
     margin: 0px;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 #hebergementsPop #hotelsPop {
@@ -438,10 +438,11 @@ main .titre p{
     /*Barre de recherche*/
     #recherche {
         margin-left: 20px;
+        width: 90%;
     }
 
     #recherche input {
-        width: 230px;
+        width: 255px;
     }
 
     #recherche button { /*Bouton pour grand écran*/
@@ -475,6 +476,10 @@ main .titre p{
         padding-bottom: 20px;
     }
 
+    .paragraphe i{
+        margin-left: 20px;
+    }
+
     /*Logements section + aside*/
     #hebergements {
         display: flex;
@@ -486,8 +491,14 @@ main .titre p{
         background-color: #fff;
     }
 
+    #hebergementsDispo  h2 {
+        flex-basis: 90%;
+        padding: 15px 0px;
+    }
+
     #hebergementsDispo #hotelsDispo .hotel{
         flex: 0 0 100%;
+        max-width: 90%;
         margin-bottom: 10px;
         box-shadow: 10px 10px 10px var(--grisCharte);
     }
@@ -497,14 +508,16 @@ main .titre p{
     }
 
     /*Logements les plus populaires*/
+    #hebergementsPop{
+        padding: 15px 0px;
+    }
+
     #hebergementsPop #hotelsPop {
         min-height: 700px;
     }
 
     #hebergementsPop #hotelsPop .hotelPop {
-        width: 320px;
         height: 190px;
-        margin-top: 0px;
     }
 
     #hebergementsPop #hotelsPop .hotelPop .hotelPopImg {
@@ -524,6 +537,7 @@ main .titre p{
 
     .activitesMars {
         margin-left: 20px;
+        margin-top: 40px;
     }
 
     #activites .grandFormat{
@@ -551,14 +565,13 @@ main .titre p{
 
     #activites .groupePetitFormat .petitFormatTailleBasse,
     #activites .groupePetitFormat .petitFormatTailleMoyenne,
-    #activites .groupePetitFormat .petitFormatTailleHaute,    
-    {
-        height: 150px;
+    #activites .groupePetitFormat .petitFormatTailleHaute {
+        height: 200px;
     }
 
     #activites .groupePetitFormat .petitFormatTailleBasse .petiteImg,
     #activites .groupePetitFormat .petitFormatTailleMoyenne .petiteImg,
-    #activites .groupePetitFormat .petitFormatTailleHaute .petiteImg, {
+    #activites .groupePetitFormat .petitFormatTailleHaute .petiteImg {
         height: 150px;
     }
 
