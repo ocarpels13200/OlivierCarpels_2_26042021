@@ -9,8 +9,18 @@
 
 /*En-tête*/
 
-#header #top-header #logo{
-    margin: 0px;
+#header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#header #logo{
+    display: block;
+}
+
+#header #logo>figure{
+    margin: 0;
 }
 
 #header #top-header .menu .liens ul{
