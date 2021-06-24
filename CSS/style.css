@@ -315,6 +315,7 @@ main .titre p{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 99%;
 }
 
 #activites .grandFormat{
