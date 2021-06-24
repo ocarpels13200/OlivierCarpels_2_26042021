@@ -497,6 +497,10 @@ main .titre p{
         height: 100px;
     }
 
+    #hebergementsDispo  #afficherPlus {
+        margin-left: 20px;
+    }
+
     /*Logements les plus populaires*/
 
     #hebergementsPop #hotelsPop {
